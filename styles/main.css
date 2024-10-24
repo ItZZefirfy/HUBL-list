@@ -7,6 +7,11 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #232323;
   color: white;
+  background: url("/images/ListBG.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .levels-wrapper {
@@ -36,6 +41,9 @@ body {
 .level-image {
   margin-right: 10px;
   border-radius: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 .level-text {
