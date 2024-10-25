@@ -1,26 +1,3 @@
-* {
-  padding: none;
-  margin: none;
-}
-
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #232323;
-  color: white;
-  background: url("../images/source/ListBG.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.levels-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .level {
   display: flex;
   background-color: #222233;
@@ -44,11 +21,14 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  max-height: 120px;
+  height: 10vw;
 }
 
 .level-text {
   margin-left: 10px;
   padding-top: 10px;
+  font-size: clamp(5px, 2vw, 15px);
 }
 .level-text h1, .level-text h3 {
   margin: 0;
@@ -62,6 +42,7 @@ body {
   bottom: 0;
   right: 0;
   transform: translateX(-8px) translateY(-8px);
+  transition: 0.25s;
   width: 60px;
   height: 60px;
   border-radius: 30px;
@@ -75,4 +56,91 @@ body {
 .scroll-btn:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5333333333);
   filter: brightness(110%);
+}
+
+/*.show {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.hide {
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}*/
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh;
+  border-radius: 2vh;
+  font-size: clamp(10px, 1vw, 15px);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.logo {
+  margin: 2vh 2vw;
+}
+
+.page {
+  padding: 2vh 2vw;
+  margin: 0 0.5vw;
+  border-radius: 1vh;
+  color: white;
+  text-decoration: none;
+  transition: 0.25s;
+}
+.page:hover {
+  background-color: rgba(255, 255, 255, 0.0666666667);
+}
+
+.selected-page {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.selected-page:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+* {
+  padding: none;
+  margin: none;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #232323;
+  color: white;
+  background: url("../images/ListBG.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.levels-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=main.css.map */

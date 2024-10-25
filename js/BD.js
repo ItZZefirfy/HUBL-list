@@ -26,4 +26,39 @@ var levels = [
         "imageURL": "images/source/250 MPH.png",
         "videoURL": false
     },
+
+    {
+        "name": "Older Wave",
+        "creator": "Nerd",
+        "imageURL": "images/source/older Wave.png",
+        "videoURL": false
+    },
+
+    {
+        "name": "Mr beast",
+        "creator": "Mr beast (Lomamov Ru)",
+        "imageURL": "images/source/Mr beast.png",
+        "videoURL": false
+    },
+
+    {
+        "name": "Just like",
+        "creator": "Peredoznik",
+        "imageURL": "images/source/just like.png",
+        "videoURL": false
+    },
+
+    {
+        "name": "Just a demon",
+        "creator": "ItsDarknessCat ",
+        "imageURL": "images/source/just a demon.png",
+        "videoURL": false
+    },
+
+    {
+        "name": "Just Demon",
+        "creator": "Peredoznik",
+        "imageURL": "images/source/just Demon.png",
+        "videoURL": false
+    },
 ]

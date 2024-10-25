@@ -1,0 +1,58 @@
+.scroll-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-8px) translateY(-8px);
+    transition: .25s;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+
+    font-size: 30px;
+
+    border: none;
+    outline: none;
+
+    background-color: #2e2e4b;
+    color: white;
+
+    box-shadow: 0 0 15px #000a;
+
+    &:hover {
+        box-shadow: 0 0 30px #0008;
+        filter: brightness(110%);
+    }
+
+    //opacity: 0;
+}
+
+/*.show {
+    animation-name: show;
+    -webkit-animation-name: show;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+.hide {
+    animation-name: hide;
+    -webkit-animation-name: hide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    visibility: visible !important;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes hide {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}*/

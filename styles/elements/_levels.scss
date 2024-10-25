@@ -1,0 +1,43 @@
+.level {
+    display: flex;
+    background-color: #222233;
+    padding: 10px;
+    padding-top: 12px;
+    border-radius: 16px;
+    margin: 8px;
+
+    width: 75%;
+
+    box-shadow: 0 0 15px #000a;
+    transition: 0.1s;
+
+    &:hover {
+        transform: scale(101%);
+        box-shadow: 0 0 30px #0008;
+        filter: brightness(110%);
+    }
+}
+
+.level-image {
+    margin-right: 10px;
+    border-radius: 12px;
+
+    user-select: none;
+
+    max-height: 120px;
+    height: 10vw;
+}
+
+.level-text {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: clamp(5px, 2vw, 15px);
+
+    h1, h3 {
+        margin: 0;
+    }
+
+    h1 {
+        margin-bottom: 5px;
+    }
+}

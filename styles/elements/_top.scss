@@ -1,0 +1,39 @@
+
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+
+    //background-color: #19192a;
+    border-radius: 2vh;
+
+    font-size: clamp(10px, 1vw, 15px);
+
+    user-select: none;
+}
+
+.logo {
+    margin: 2vh 2vw;
+}
+
+.page {
+    padding: 2vh 2vw;
+    margin: 0 0.5vw;
+    border-radius: 1vh;
+    color: white;
+    text-decoration: none;
+
+    transition: .25s;
+
+    &:hover {
+        background-color: #fff1;
+    }
+}
+
+.selected-page {
+    background-color: #fff3;
+    &:hover {
+        background-color: #fff3;
+    }
+}

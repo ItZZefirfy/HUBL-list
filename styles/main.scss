@@ -1,3 +1,7 @@
+@import 'elements/levels';
+@import 'elements/scroll';
+@import 'elements/top';
+
 * {
     padding: none;
     margin: none;
@@ -8,7 +12,7 @@ body {
     background-color: #232323;
     color: white;
 
-    background: url('../images/source/ListBG.png');
+    background: url('../images/ListBG.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,71 +24,4 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.level {
-    display: flex;
-    background-color: #222233;
-    padding: 10px;
-    padding-top: 12px;
-    border-radius: 16px;
-    margin: 8px;
-
-    width: 75%;
-
-    box-shadow: 0 0 15px #000a;
-    transition: 0.1s;
-
-    &:hover {
-        transform: scale(101%);
-        box-shadow: 0 0 30px #0008;
-        filter: brightness(110%);
-    }
-}
-
-.level-image {
-    margin-right: 10px;
-    border-radius: 12px;
-
-    user-select: none;
-}
-
-.level-text {
-    margin-left: 10px;
-    padding-top: 10px;
-
-    h1, h3 {
-        margin: 0;
-    }
-
-    h1 {
-        margin-bottom: 5px;
-    }
-}
-
-
-.scroll-btn {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    transform: translateX(-8px) translateY(-8px);
-
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-
-    font-size: 30px;
-
-    border: none;
-    outline: none;
-
-    background-color: #2e2e4b;
-    color: white;
-
-    box-shadow: 0 0 15px #000a;
-
-    &:hover {
-        box-shadow: 0 0 30px #0008;
-        filter: brightness(110%);
-    }
 }

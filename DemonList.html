@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,18 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
-        <div class="levels-wrapper" id="levels-wrapper">
+        <div id="top"></div>
 
-        </div>
+        <div class="levels-wrapper" id="levels-wrapper"></div>
 
-        <button onclick="topFunction()" class="scroll-btn">
+        <button onclick="topFunction()" class="scroll-btn" id="scroll-btn">
             <i class='bx bx-up-arrow-alt'></i>
         </button>
         
         <script src="js/scroll.js"></script>
+        <script src="js/addTop.js"></script>
         <script src="js/BD.js"></script>
         <script src="js/pages/demonList.js"></script>
+        <script>createTop(0)</script>
     </body>
 </html>
