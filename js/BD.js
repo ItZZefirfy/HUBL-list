@@ -30,14 +30,14 @@ var levels = [
     {
         "name": "Older Wave",
         "creator": "Nerd",
-        "imageURL": "images/source/older Wave.png",
+        "imageURL": "images/source/older wave.png",
         "videoURL": false
     },
 
     {
         "name": "Mr beast",
         "creator": "Mr beast (Lomamov Ru)",
-        "imageURL": "images/source/Mr beast.png",
+        "imageURL": "images/source/mr beast.png",
         "videoURL": false
     },
 
@@ -58,7 +58,7 @@ var levels = [
     {
         "name": "Just Demon",
         "creator": "Peredoznik",
-        "imageURL": "images/source/just Demon.png",
+        "imageURL": "images/source/just demon.png",
         "videoURL": false
     },
 ]
