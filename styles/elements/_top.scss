@@ -28,11 +28,13 @@
 
     &:hover {
         background-color: #fff1;
+        backdrop-filter: blur(8px);
     }
 }
 
 .selected-page {
     background-color: #fff3;
+    backdrop-filter: blur(8px);
     &:hover {
         background-color: #fff3;
     }

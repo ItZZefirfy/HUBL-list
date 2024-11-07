@@ -1,6 +1,7 @@
 @import 'elements/levels';
 @import 'elements/scroll';
 @import 'elements/top';
+@import 'elements/links';
 
 * {
     padding: none;
@@ -24,4 +25,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+a, button {
+    user-select: none;
 }

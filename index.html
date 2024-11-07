@@ -6,10 +6,60 @@
         <title>More</title>
 
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/info.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="shortcut icon" href="images/icon.png">
     </head>
     <body>
         <div id="top"></div>
+
+        <div class="more-info">
+            <h1>Правила попадания</h1>
+            <ul>
+                <li>Наличе записи с кликами (клики нужны если уровень сложнее Eternal или L)</li>
+                <li>Чистая репутация верифера (не читерил раньше)</li>
+                <li>Уровень должен быть оценён и иметь сложность Extreme Demon (для демонов)</li>
+                <li>Уровень должен быть сложнее топа 25</li>
+                <li>Для добавления уровня заполните форму ниже</li>
+            </ul>
+            Правила не распространяются на старые уровни
+
+            <h1>Отправка уровня</h1>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeNYANosLFh2VtKtdgSRfaK7I_ccqqkQ5mFRc8auHZaqKJiVQ/viewform?usp=sf_link" target="_blank" class="SendRequest">Добавить уровень</a>
+            <a class="SendRequest Disabled">Отправить прохождение</a>
+            <p>Формы проверяются каждую неделю.</p>
+
+            <h1>Правила подсчёта очков</h1>
+            <ul>
+                <li>1500 - top 1</li>
+                <li>1000 - top 2</li>
+                <li>900 - top 3</li>
+                <li>800 - top 4</li>
+                <li>700 - top 5</li>
+                <li>...</li>
+                <li>200 - top 10</li>
+                <li>100 - top 11+</li>
+                <li>За верификацию уровня из топ 10 - x2 очков</li>
+            </ul>
+
+            <h1>Планы на будущее</h1>
+            <ul>
+                <li>Сделать топ игроков</li>
+                <li>Улучшить мобильную адаптацию</li>
+            </ul>
+            
+        </div>
+
+        <div class="links">
+            <div class="links-wrapper">
+                <a href="https://discord.com/invite/T9CbNDCQKq"                target="_blank"><div class="s discord"  style="--main-color: #446ad1;"><i class='bx bxl-discord-alt'></i></div></a>
+                <a href="https://t.me/Hubl_gdps"                               target="_blank"><div class="s telegram" style="--main-color: #0099ff;"><i class='bx bxl-telegram'></i></div></a>
+                <a href="https://www.youtube.com/@hublgdps"                    target="_blank"><div class="s youtube"  style="--main-color: red;"><i     class='bx bxl-youtube'></i></div></a>
+                <a href="https://www.tiktok.com/@hublgdps?_t=8oqM5QUMm4V&_r=1" target="_blank"><div class="s tiktok"   style="--main-color: black;"><i   class='bx bxl-tiktok'></i></div></a>
+            </div>
+        </div>
+
+        <span id="version">v1.0.0.1</span>
 
         <button onclick="topFunction()" class="scroll-btn" id="scroll-btn">
             <i class='bx bx-up-arrow-alt'></i>
@@ -18,5 +68,8 @@
         <script src="js/scroll.js"></script>
         <script src="js/addTop.js"></script>
         <script>createTop(2)</script>
+        <script>
+            
+        </script>
     </body>
 </html>

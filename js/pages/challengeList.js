@@ -21,8 +21,8 @@ function pasteLevelElement(text) {
 var level;
 var levelData;
 
-for (var i = levels.length-1; i > -1; i--) {
-    levelData = levels[i]
+for (var i = challenges.length-1; i > -1; i--) {
+    levelData = challenges[i]
     level = generateLevelElement(levelData["name"], 
                                  levelData["creator"], 
                                  levelData["videoURL"], 
