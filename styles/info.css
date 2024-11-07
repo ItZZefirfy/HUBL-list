@@ -17,12 +17,17 @@ body {
 }
 
 .SendRequest {
-  color: white;
-  text-decoration: none;
   padding: 10px;
   background-color: #3f52ff;
   border-radius: 12px;
   transition: 0.25s;
+  border: none;
+  outline: none;
+  margin: 0.5vh;
+}
+.SendRequest a {
+  text-decoration: none;
+  color: white;
 }
 .SendRequest:hover {
   filter: brightness(90%);
@@ -30,6 +35,8 @@ body {
 
 .Disabled {
   background-color: #424242;
+}
+.Disabled a {
   color: #888;
 }
 .Disabled:hover {

@@ -2,8 +2,7 @@
   display: flex;
   background-color: #222233;
   padding: 10px;
-  padding-top: 12px;
-  border-radius: 16px;
+  border-radius: 1.2vw;
   margin: 8px;
   width: 75%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6666666667);
@@ -17,7 +16,7 @@
 
 .level-image {
   margin-right: 10px;
-  border-radius: 12px;
+  border-radius: 1vw;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
