@@ -43,16 +43,16 @@ var levels = [ //demons
 
     {
         "name": "Mr beast",
-        "creator": "Mr beast (Lomamov Ru)",
+        "creator": "Mr beast (LomamovRu)",
         "imageURL": "images/source/mr beast.png",
-        "videoURL": false
+        "videoURL": "https://youtu.be/bEuRJiu_n1Y?si=Uzku5s_hbIyTOT96"
     },
 
     {
         "name": "Just like",
         "creator": "Peredoznik",
         "imageURL": "images/source/just like.png",
-        "videoURL": false
+        "videoURL": "https://youtu.be/0_5Fh3c1WWw?si=jpvbeLzB8A3pGhFi"
     },
 
     {
@@ -96,7 +96,7 @@ var challenges = [ //challenges
         "name": "8joh",
         "creator": "TOBAP",
         "imageURL": "images/source/8joh.png",
-        "videoURL": false,
+        "videoURL": "https://drive.google.com/file/d/1gkoUxw7gEORAX1X2hE356q4cTN62Zdq-/view?usp=sharing",
         "levelID":"989"
     },
 
@@ -123,10 +123,11 @@ var challenges = [ //challenges
     },
 
     {
-        "name": "Wave Challenge",
-        "creator": "Poveez",
-        "imageURL": "images/source/wave challenge.png",
-        "videoURL": false
+        "name": "dark side of moon",
+        "creator": "mintyzz",
+        "imageURL": "images/source/dark side of moon.png",
+        "videoURL": "https://drive.google.com/file/d/1_FuFzCfYmCvx_l589-tPHz8Z3CtLfBcd/view?usp=sharing",
+        "levelID":"1022"
     },
 
     {
@@ -140,6 +141,13 @@ var challenges = [ //challenges
         "name": "6f3c",
         "creator": "KopelaSoula",
         "imageURL": "images/source/6f3c.png",
+        "videoURL": false
+    },
+
+    {
+        "name": "Wave Challenge",
+        "creator": "Poveez",
+        "imageURL": "images/source/wave challenge.png",
         "videoURL": false
     },
 
