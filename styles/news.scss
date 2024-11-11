@@ -1,0 +1,27 @@
+#news-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-post {
+    width: 80vw;
+    padding: 0 3vw;
+    padding-bottom: 3vh;
+    background-color: #000b;
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+
+    border-radius: 12px;
+
+    margin: 15px;
+    padding: 30px;
+
+    animation: .5s 1 spawn-news-post;
+}
+
+@keyframes spawn-news-post {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}

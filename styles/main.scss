@@ -2,6 +2,7 @@
 @import 'elements/scroll';
 @import 'elements/top';
 @import 'elements/links';
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Quicksand:wght@300..700&display=swap');
 
 * {
     padding: none;
@@ -9,7 +10,7 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Quicksand", Calibri;
     background-color: #232323;
     color: white;
 
@@ -29,4 +30,10 @@ body {
 
 a, button {
     user-select: none;
+}
+
+.back {
+    outline: none;
+    border: none;
+    border-radius: 8px;
 }

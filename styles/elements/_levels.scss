@@ -41,3 +41,11 @@
         margin-bottom: 5px;
     }
 }
+
+.copyIdIcon {
+    transition: .1s;
+    &:hover {
+        color: #999;
+        
+    }
+}

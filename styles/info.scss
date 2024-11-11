@@ -17,17 +17,18 @@ body {
 }
 
 .SendRequest {
-    a {
-        text-decoration: none;
+    text-decoration: none;
+    
+    button {
         color: white;
-    }
-    padding: 10px;
-    background-color: #3f52ff;
-    border-radius: 12px;
-    transition: .25s;
+        padding: 10px;
+        background-color: #3f52ff;
+        border-radius: 12px;
+        transition: .25s;
 
-    border: none;
-    outline: none;
+        border: none;
+        outline: none;
+    }
 
     margin: 0.5vh;
 
@@ -37,8 +38,11 @@ body {
 }
 
 .Disabled {
-    background-color: #424242;
-    a {color: #888;}
+    button {
+        background-color: #424242;
+        color: #888;
+    }
+    
     &:hover {
         filter: none;
     }
