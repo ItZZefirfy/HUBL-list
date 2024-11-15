@@ -18,7 +18,6 @@ body {
 
 .SendRequest {
   text-decoration: none;
-  margin: 0.5vh;
 }
 .SendRequest button {
   color: white;
@@ -39,4 +38,8 @@ body {
 }
 .Disabled:hover {
   filter: none;
+}
+
+.shadow-1 {
+  text-shadow: 0 0 5px black;
 }/*# sourceMappingURL=info.css.map */
