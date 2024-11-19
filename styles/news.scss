@@ -21,6 +21,14 @@
     animation: .5s 1 spawn-news-post;
 }
 
+.news-column-flex-frame {
+    display: flex;
+}
+
+.news-font-icon {
+    transform: translateY(15px);
+}
+
 @keyframes spawn-news-post {
     0% {opacity: 0;}
     100% {opacity: 1;}
