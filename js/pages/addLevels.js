@@ -9,11 +9,11 @@ function addLevels(type) {
         var levelData;
 
         function generateLevelElement (name, creator, videoURL, imageURL, position, LevelId) {
-            var image = '<img class="level-image" src="' + imageURL + '" alt="">'
+            var image = '<img src="' + imageURL + '" alt="">'
             if (videoURL != false) {
-                var link = '<a href="' + videoURL + '" target="_blank">' + image + '</a>'
+                var link = '<a class="level-image" href="' + videoURL + '" target="_blank">' + image + '</a>'
             } else {
-                var link = image
+                var link = '<div class="level-image">' + image + '</div>'
             }
             
         

@@ -20,6 +20,8 @@ body {
     text-decoration: none;
     
     button {
+        font-family: var(--font-family);
+
         color: white;
         padding: 10px;
         background-color: #3f52ff;
@@ -29,8 +31,11 @@ body {
         border: none;
         outline: none;
     }
-    &:hover {
-        filter: brightness(90%);
+
+    @media (hover: hover) {
+        &:hover {
+            filter: brightness(90%);
+        }
     }
 }
 
@@ -40,8 +45,10 @@ body {
         color: #888;
     }
     
-    &:hover {
-        filter: none;
+    @media (hover: hover) {
+        &:hover {
+            filter: none;
+        }
     }
 }
 

@@ -20,6 +20,7 @@ body {
   text-decoration: none;
 }
 .SendRequest button {
+  font-family: var(--font-family);
   color: white;
   padding: 10px;
   background-color: #3f52ff;
@@ -28,16 +29,20 @@ body {
   border: none;
   outline: none;
 }
-.SendRequest:hover {
-  filter: brightness(90%);
+@media (hover: hover) {
+  .SendRequest:hover {
+    filter: brightness(90%);
+  }
 }
 
 .Disabled button {
   background-color: #424242;
   color: #888;
 }
-.Disabled:hover {
-  filter: none;
+@media (hover: hover) {
+  .Disabled:hover {
+    filter: none;
+  }
 }
 
 .shadow-1 {

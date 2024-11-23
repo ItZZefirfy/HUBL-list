@@ -23,14 +23,28 @@
     padding: 10px;
     border-radius: 40px;
     font-size: 40px;
-}
 
-.s:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 10px var(--main-color);
+    @media (hover: hover) {
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px var(--main-color);
+        }
+    }
 }
 
 .telegram {
     padding-left: 8px;
     padding-right: 12px;
+}
+
+
+@media (max-width: 440px) {
+    .s {
+        width: var(--mobile-social-licks-size);
+        height: var(--mobile-social-licks-size);
+        border-radius: var(--mobile-social-licks-size);
+        font-size: var(--mobile-social-licks-size);
+        padding: calc(var(--mobile-social-licks-size)/4);
+        margin: calc(var(--mobile-social-licks-size)/2);
+    }
 }

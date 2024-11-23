@@ -1,47 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nova+Mono&family=Quicksand:wght@300..700&display=swap");
+:root {
+  --font-family: "Quicksand", "Comfortaa", Calibri;
+  --default-text-color: #fff;
+  --secondary-text-color: #ccc;
+  --level-bg-color: #222233;
+  --scroll-btn-bg-color: #2e2e4b;
+  --mobile-social-licks-size: 8vw;
+}
+
 .level {
   display: flex;
-  background-color: #222233;
-  padding: 10px;
+  background-color: var(--level-bg-color);
   border-radius: 1.2vw;
   margin: 8px;
   width: 75%;
+  height: 12vh;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6666666667);
   transition: 0.1s;
+  position: relative;
 }
-.level:hover {
-  transform: scale(101%);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5333333333);
-  filter: brightness(110%);
+@media (max-width: 580px) {
+  .level {
+    width: 90%;
+  }
+}
+@media (hover: hover) {
+  .level:hover {
+    transform: scale(101%);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5333333333);
+    filter: brightness(110%);
+  }
 }
 
 .level-image {
-  margin-right: 10px;
-  border-radius: 1vw;
+  margin-left: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   max-height: 120px;
-  height: 10vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.level-image img {
+  height: calc(100% - 20px);
+  border-radius: 1vw;
 }
 
 .level-text {
   margin-left: 10px;
-  padding-top: 10px;
-  font-size: clamp(5px, 2vw, 15px);
+  font-size: clamp(0px, 2vw, 15px);
 }
-.level-text h1, .level-text h3 {
+.level-text h2, .level-text h3 {
+  color: var(--secondary-text-color);
   margin: 0;
 }
 .level-text h1 {
-  margin-bottom: 5px;
+  margin: 5px;
 }
 
 .copyIdIcon {
   transition: 0.1s;
 }
-.copyIdIcon:hover {
-  color: #999;
+@media (hover: hover) {
+  .copyIdIcon:hover {
+    color: #999;
+  }
 }
 
 .scroll-btn {
@@ -56,9 +82,10 @@
   font-size: 30px;
   border: none;
   outline: none;
-  background-color: #2e2e4b;
+  background-color: var(--scroll-btn-bg-color);
   color: white;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.6666666667);
+  display: none;
 }
 .scroll-btn:hover {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5333333333);
@@ -118,10 +145,12 @@
   text-decoration: none;
   transition: 0.25s;
 }
-.page:hover {
-  background-color: rgba(255, 255, 255, 0.0666666667);
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+@media (hover: hover) {
+  .page:hover {
+    background-color: rgba(255, 255, 255, 0.0666666667);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
 }
 
 .selected-page {
@@ -129,8 +158,10 @@
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
 }
-.selected-page:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+@media (hover: hover) {
+  .selected-page:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .links {
@@ -159,10 +190,11 @@
   border-radius: 40px;
   font-size: 40px;
 }
-
-.s:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 10px var(--main-color);
+@media (hover: hover) {
+  .s:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px var(--main-color);
+  }
 }
 
 .telegram {
@@ -170,13 +202,23 @@
   padding-right: 12px;
 }
 
+@media (max-width: 440px) {
+  .s {
+    width: var(--mobile-social-licks-size);
+    height: var(--mobile-social-licks-size);
+    border-radius: var(--mobile-social-licks-size);
+    font-size: var(--mobile-social-licks-size);
+    padding: calc(var(--mobile-social-licks-size) / 4);
+    margin: calc(var(--mobile-social-licks-size) / 2);
+  }
+}
 * {
   padding: none;
   margin: none;
 }
 
 body {
-  font-family: "Quicksand", Calibri;
+  font-family: var(--font-family);
   background-color: #232323;
   color: white;
   background: url("../images/ListBG.png");

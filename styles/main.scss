@@ -1,8 +1,8 @@
+@import 'settings';
 @import 'elements/levels';
 @import 'elements/scroll';
 @import 'elements/top';
 @import 'elements/links';
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Quicksand:wght@300..700&display=swap');
 
 * {
     padding: none;
@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "Quicksand", Calibri;
+    font-family: var(--font-family);
     background-color: #232323;
     color: white;
 
