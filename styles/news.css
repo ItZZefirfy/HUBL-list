@@ -9,10 +9,10 @@
   width: 80vw;
   padding: 0 3vw;
   padding-bottom: 3vh;
-  background-color: rgba(0, 0, 0, 0.7333333333);
+  background-color: var(--info-bg-color);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
-  color: #ffffff;
+  color: var(--default-text-color);
   border-radius: 12px;
   margin: 15px 0;
   padding: 30px;

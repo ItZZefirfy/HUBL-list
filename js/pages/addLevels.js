@@ -1,5 +1,4 @@
 
-
 function addLevels(type) {
     fetch(links[type])
     .then(levels => levels.json())

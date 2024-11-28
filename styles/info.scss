@@ -9,9 +9,9 @@ body {
     width: 80vw;
     padding: 0 3vw;
     padding-bottom: 3vh;
-    background-color: #000b;
+    background-color: var(--info-bg-color);
     backdrop-filter: blur(8px);
-    color: #ffffff;
+    color: var(--default-text-color);
 
     border-radius: 12px;
 }
