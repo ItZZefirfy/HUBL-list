@@ -15,6 +15,10 @@
 
         <div id="top"></div>
 
+        <h1 class="shadow-1">Последние новости</h1>
+        <div id="news-wrapper"></div>
+
+        <h1 class="shadow-1">Информация</h1>
         <div class="more-info">
             <h1>Основное</h1>
             <a class="SendRequest" href="news.html"><button>Новости</button></a>
@@ -30,8 +34,8 @@
                 <li>Наличе записи с кликами</li>
                 <li>Уровень должен быть <b>сложнее</b> топа 25</li>
                 <li>Уровень должен быть оценён и иметь сложность Extreme Demon (только для демонов)</li>
-                <li>Для добавления уровня заполните форму ниже</li>
             </ul>
+            <a href="https://github.com/ItZZefirfy/HUBL-list/blob/main/README.md">Подробнее</a>
 
             <h1>Отправка уровня</h1>
             <a class="SendRequest" href="https://docs.google.com/forms/d/e/1FAIpQLSeNYANosLFh2VtKtdgSRfaK7I_ccqqkQ5mFRc8auHZaqKJiVQ/viewform?usp=sf_link" target="_blank"><button>Добавить уровень</button></a>
@@ -43,22 +47,6 @@
                 <li>Отправить прохождение - Отправить своё прохождение уровня. Нужно для зачисления очков игроку. (скоро)</li>
             </ul>
 
-            <h1>Правила подсчёта очков</h1>
-            <ul>
-                <li>3000 - top 1</li>
-                <li>2500 - top 2</li>
-                <li>2000 - top 3</li>
-                <li>1500 - top 4</li>
-                <li>1000 - top 5</li>
-                <li>600 - top 6</li>
-                <li>500 - top 7</li>
-                <li>400 - top 8</li>
-                <li>300 - top 9</li>
-                <li>200 - top 10</li>
-                <li>100 - top 11+</li>
-                <li>За верификацию уровня из топ 10 - x2 очков</li>
-            </ul>
-
             <h1>Планы на будущее</h1>
             <ul>
                 <li>Сделать топ игроков (скоро)</li>
@@ -66,9 +54,6 @@
             </ul>
             
         </div>
-
-        <h1 class="shadow-1">Последние новости</h1>
-        <div id="news-wrapper"></div>
 
         <div class="links">
             <div class="links-wrapper">
@@ -89,6 +74,6 @@
         <script src="js/addTop.js"></script>
         <script src="js/BD.js"></script>
         <script src="js/pages/lastNews.js"></script>
-        <script>createTop(2)</script>
+        <script>createTop(2); lastNews(2)</script>
     </body>
 </html>
