@@ -1,13 +1,17 @@
 function createTop(page) {
-    var _DemonlistPageTop = `<h1 class="logo">HUBLGDPS</h1>
+    var _DemonlistPageTop = `<a href="index.html" class="logo"><h1>HUBLGDPS</h1>
 <a    class="page selected-page" href="DemonList.html">Demonlist</a>
 <a    class="page" href="ChallengeList.html">Challengelist</a>
 <a    class="page" href="index.html">More</a>`
-    var _ChallengeListPageTop = `<h1 class="logo">HUBLGDPS</h1>
+    var _ChallengeListPageTop = `<a href="index.html" class="logo"><h1>HUBLGDPS</h1>
 <a    class="page" href="DemonList.html">Demonlist</a>
 <a    class="page selected-page" href="ChallengeList.html">Challengelist</a>
 <a    class="page" href="index.html">More</a>`
-    var _MorePageTop = `<h1 class="logo">HUBLGDPS</h1>
+    var _MorePageTop = `<a href="index.html" class="logo"><h1>HUBLGDPS</h1>
+<a    class="page" href="DemonList.html">Demonlist</a>
+<a    class="page" href="ChallengeList.html">Challengelist</a>
+<a    class="page selected-page" href="index.html">More</a>`
+    var _PlayersPageTop = `<a href="index.html" class="logo"><h1>HUBLGDPS</h1>
 <a    class="page" href="DemonList.html">Demonlist</a>
 <a    class="page" href="ChallengeList.html">Challengelist</a>
 <a    class="page selected-page" href="index.html">More</a>`
