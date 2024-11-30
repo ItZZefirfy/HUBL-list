@@ -15,13 +15,22 @@
 
 .logo {
     margin: 2vh 2vw;
+    color: var(--default-text-color);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+
+    @media (hover: hover) {
+        &:hover {
+            text-shadow: 0 0 5px var(--default-text-color);
+        }
+    }
 }
 
 .page {
     padding: 2vh 2vw;
     margin: 0 0.5vw;
     border-radius: 1vh;
-    color: white;
+    color: var(--default-text-color);
     text-decoration: none;
 
     transition: .25s;
@@ -30,6 +39,7 @@
         &:hover {
             background-color: #fff1;
             backdrop-filter: blur(8px);
+            text-shadow: 0 0 2px var(--default-text-color);
         }
     }
 }

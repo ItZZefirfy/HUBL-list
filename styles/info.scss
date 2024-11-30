@@ -14,6 +14,22 @@ body {
     color: var(--default-text-color);
 
     border-radius: 12px;
+
+    a {
+        color: white;
+        transition: .1s;
+
+        @media (hover: hover) {
+            &:hover {
+                color: #3f52ff;
+            }
+        }
+        
+        &:active {
+            color: #3f52ff;
+        }
+
+    }
 }
 
 .SendRequest {
@@ -54,4 +70,62 @@ body {
 
 .shadow-1 {
     text-shadow: 0 0 5px black;
+}
+
+input[type="checkbox"] {
+    transform: scale(150%);
+    border: none;
+    outline: none;
+
+    transition: .2s ease-in-out;
+}
+
+.checkbox {
+    //background-color: green;
+    font-size: 1.5rem;
+    color: var(--third-text-color);
+    transition: .2s ease-in-out;
+    background: none;
+    border: none;
+    outline: none;
+
+    text-align: left;
+
+    margin: 5px;
+
+    @media (hover: hover) {
+        &:hover {
+            color: var(--default-text-color);
+        }
+    }
+}
+
+.checkbox-selected {
+    color: var(--default-text-color);
+    transform: translateX(10px);
+    text-shadow: 0 0 3px var(--default-text-color);
+
+    @media (hover: hover) {
+        &:hover {
+            color: var(--secondary-text-color);
+            text-shadow: none;
+        }
+    }
+}
+
+#submit {
+    font-size: 1rem;
+    color: var(--default-text-color);
+    transition: .2s ease-in-out;
+    background: #3f52ff;
+    padding: 10px;
+    border-radius: var(--border-radius2);
+    border: none;
+    outline: none;
+
+    @media (hover: hover) {
+        &:hover {
+            filter: brightness(80%);
+        }
+    }
 }

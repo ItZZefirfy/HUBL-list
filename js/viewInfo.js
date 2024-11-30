@@ -1,3 +1,4 @@
+// функция выбирает викторов из списка игроков (players) по параметру id - (id уровня)  
 function selectPlayersForLevelInfo(players, id) {
     let result = []
     let levels;
@@ -13,6 +14,7 @@ function selectPlayersForLevelInfo(players, id) {
     return result
 }
 
+// функция добавляет информацию об уровне в пользовательский интерфейс
 function addLevelInfoContent(levelData, players) {
     document.getElementsByTagName("body")[0].innerHTML +=  `<div id="info-wrapper"></div>`
 
@@ -45,6 +47,7 @@ function addLevelInfoContent(levelData, players) {
 
 }
 
+// функция подгружает информацию об игроках и вызывает addLevelInfoContent
 function loadPlayersContent(levelData, id) {
     fetch(links["players"])
     .then(players => players.json())
@@ -54,13 +57,7 @@ function loadPlayersContent(levelData, id) {
     })
 }
 
-
-var value;
-
-function getValue(_value) {
-    value = _value
-}
-
+// открывает страницу с информацией о демоне
 function viewDemonInfo(id) {
     document.getElementById("levels-wrapper").remove()
 
@@ -77,6 +74,7 @@ function viewDemonInfo(id) {
     })
 }
 
+// открывает страницу с информацией о челлендже
 function viewChallengeInfo(id) {
     document.getElementById("levels-wrapper").remove()
 
@@ -93,6 +91,7 @@ function viewChallengeInfo(id) {
     })
 }
 
+// открывает страницу с информацией об игроке
 function viewPlayerInfo(name) {
 
 }
