@@ -12,7 +12,7 @@ if (Boolean(newsVisibility)) {
     document.getElementById("news-visible-option").className = "checkbox"
 }
 
-if (Boolean(newsVisibility)) {
+if (Boolean(levelIDVisibility)) {
     document.getElementById("levelID-option").className = "checkbox checkbox-selected"
 } else {
     document.getElementById("levelID-option").className = "checkbox"
@@ -56,4 +56,6 @@ document.getElementById("submit").onclick = function () {
     localStorage.setItem("effects", Number(effects))
     localStorage.setItem("newsVisibility", Number(newsVisibility))
     localStorage.setItem("levelIDVisibility", Number(levelIDVisibility))
+
+    location.reload()
 }

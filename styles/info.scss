@@ -112,20 +112,3 @@ input[type="checkbox"] {
         }
     }
 }
-
-#submit {
-    font-size: 1rem;
-    color: var(--default-text-color);
-    transition: .2s ease-in-out;
-    background: #3f52ff;
-    padding: 10px;
-    border-radius: var(--border-radius2);
-    border: none;
-    outline: none;
-
-    @media (hover: hover) {
-        &:hover {
-            filter: brightness(80%);
-        }
-    }
-}

@@ -18,12 +18,18 @@ function addLevels(type) {
             } else {
                 var link = `<div class="level-image"><img src="${imageURL}" alt=""></div>`
             }
+
+            if (levelIDVisibility) {
+                var id = `<h3 class="copyIdIcon" onclick="copyLevelId(${LevelId})">
+                            ID: ${LevelId} <i class="bx bx-copy"></i></h3>`
+            } else {
+                var id = ''
+            }
             
             //сборка элемента
             return `<div class="level">${link}
                         <div class="level-text"><h1>#${position} - ${name}</h1><h3>${creator}</h3>
-                        <h3 class="copyIdIcon" onclick="copyLevelId(${LevelId})">
-                        ID: ${LevelId} <i class="bx bx-copy"></i></h3></div></div>`
+                        ${id}</div></div>`
         }
         
         function pasteLevelElement(text) {

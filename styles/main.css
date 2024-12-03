@@ -304,6 +304,10 @@ a, button {
           user-select: none;
 }
 
+button {
+  font-family: var(--font-family);
+}
+
 .back {
   outline: none;
   border: none;

@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/info.css">
+        <link rel="stylesheet" href="styles/effects/snow.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="shortcut icon" href="images/icon.png">
     </head>
@@ -20,13 +21,17 @@
             <button class id="news-visible-option">Отображение последних новостей</button><br>
             <button class id="levelID-option">Отображение ID уровня</button><br>
 
-            <button id="submit">Сохранить</button>
+            <a class="SendRequest"><button id="submit">Сохранить</button></a>
+            <a class="SendRequest" href="index.html"><button>Назад</button></a>
             
         </div>
+
+        <div id="snow-wrapper"></div>
 
         <script src="js/addTop.js"></script>
         <script src="js/settingsInit.js"></script>
         <script src="js/settings.js"></script>
-        <script>createTop(2)</script>
+        <script src="styles/effects/effects.js"></script>
+        <script>createTop(2); if (effects) { addSnow(100, document.getElementById("snow-wrapper")) };</script>
     </body>
 </html>
