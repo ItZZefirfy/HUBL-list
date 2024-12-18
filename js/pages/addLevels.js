@@ -20,16 +20,23 @@ function addLevels(type) {
             }
 
             if (levelIDVisibility) {
-                var id = `<h3 class="copyIdIcon" onclick="copyLevelId(${LevelId})">
-                            ID: ${LevelId} <i class="bx bx-copy"></i></h3>`
+                var id = `<h3>ID: ${LevelId}</h3>`
             } else {
                 var id = ''
             }
             
             //сборка элемента
-            return `<div class="level">${link}
-                        <div class="level-text"><h1>#${position} - ${name}</h1><h3>${creator}</h3>
-                        ${id}</div></div>`
+            if (type == "demonlist") {
+                return `<div class="level">${link}
+                    <div class="level-text" onclick="viewDemonInfo(${levelData["levelID"]})">
+                    <h1>#${position} - ${name}</h1><h3>${creator}</h3>
+                    ${id}</div></div>`
+            } else if (type == "challengelist") {
+                return `<div class="level">${link}
+                    <div class="level-text" onclick="viewChallengeInfo(${levelData["levelID"]})">
+                    <h1>#${position} - ${name}</h1><h3>${creator}</h3>
+                    ${id}</div></div>`
+            }
         }
         
         function pasteLevelElement(text) {
@@ -49,7 +56,5 @@ function addLevels(type) {
             
             pasteLevelElement(level)
         }
-        
-        delete level
     })
 }
