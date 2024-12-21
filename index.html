@@ -8,18 +8,26 @@
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/info.css">
         <link rel="stylesheet" href="styles/news.css">
+        <link rel="stylesheet" href="styles/effects/snow.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="images/icon.png">
     </head>
     <body>
 
         <div id="top"></div>
 
+        <h1 class="shadow-1" id="lastNews">Последние новости</h1>
+        <div id="news-wrapper"></div>
+
+        <h1 class="shadow-1">Информация</h1>
         <div class="more-info">
             <h1>Основное</h1>
             <a class="SendRequest" href="news.html"><button>Новости</button></a>
             <a class="SendRequest" target="_blank" href="https://docs.google.com/document/d/1RSD93-DxZa2ogyBtForyD7j14-efxcwZMIrXeeZ_5i0/edit?usp=sharing"><button>ILL</button></a>
-            
+            <a class="SendRequest" href="Options.html"><button>Настройки сайта</button></a>
             <br>
 
             Все вопросы в дс (zefirfy) или в тг (@zefirfy)<br>
@@ -30,45 +38,27 @@
                 <li>Наличе записи с кликами</li>
                 <li>Уровень должен быть <b>сложнее</b> топа 25</li>
                 <li>Уровень должен быть оценён и иметь сложность Extreme Demon (только для демонов)</li>
-                <li>Для добавления уровня заполните форму ниже</li>
             </ul>
+            <a href="https://github.com/ItZZefirfy/HUBL-list/blob/main/README.md" target="_blank">Подробнее</a>
 
             <h1>Отправка уровня</h1>
             <a class="SendRequest" href="https://docs.google.com/forms/d/e/1FAIpQLSeNYANosLFh2VtKtdgSRfaK7I_ccqqkQ5mFRc8auHZaqKJiVQ/viewform?usp=sf_link" target="_blank"><button>Добавить уровень</button></a>
-            <a class="SendRequest Disabled"><button>Отправить прохождение</button></a>
+            <a class="SendRequest" href="https://docs.google.com/forms/d/e/1FAIpQLSd0urgAqIflGI5VoL-4CIOL2kYDQNF2jVpNYsbcZF48gvFHTA/viewform?usp=sf_link" target="_blank"><button>Отправить прохождение</button></a>
             <p>Формы проверяются каждую неделю.</p>
 
             <ul>
                 <li>Добавить уровень - добавление уровня в топ.</li>
-                <li>Отправить прохождение - Отправить своё прохождение уровня. Нужно для зачисления очков игроку. (скоро)</li>
-            </ul>
-
-            <h1>Правила подсчёта очков</h1>
-            <ul>
-                <li>3000 - top 1</li>
-                <li>2500 - top 2</li>
-                <li>2000 - top 3</li>
-                <li>1500 - top 4</li>
-                <li>1000 - top 5</li>
-                <li>600 - top 6</li>
-                <li>500 - top 7</li>
-                <li>400 - top 8</li>
-                <li>300 - top 9</li>
-                <li>200 - top 10</li>
-                <li>100 - top 11+</li>
-                <li>За верификацию уровня из топ 10 - x2 очков</li>
+                <li>Отправить прохождение - Отправить своё прохождение уровня. Нужно для зачисления очков игроку.</li>
             </ul>
 
             <h1>Планы на будущее</h1>
             <ul>
-                <li>Сделать топ игроков (скоро)</li>
-                <li>Улучшить мобильную адаптацию</li>
+                <li>Пофиксить баги на Firefox</li>
+                <li>Добавить фильтры в топе игроков</li>
+                <li>Добавить рулетку демонов</li>
             </ul>
-            
-        </div>
 
-        <h1 class="shadow-1">Последние новости</h1>
-        <div id="news-wrapper"></div>
+        </div>
 
         <div class="links">
             <div class="links-wrapper">
@@ -79,16 +69,20 @@
             </div>
         </div>
 
-        <span id="version">v1.1.2.0</span>
+        <span id="version">v2.0.0.0</span>
 
         <button onclick="topFunction()" class="scroll-btn" id="scroll-btn">
             <i class='bx bx-up-arrow-alt'></i>
         </button>
+
+        <div id="snow-wrapper"></div>
         
+        <script src="js/settingsInit.js"></script>
         <script src="js/scroll.js"></script>
         <script src="js/addTop.js"></script>
         <script src="js/BD.js"></script>
         <script src="js/pages/lastNews.js"></script>
-        <script>createTop(2)</script>
+        <script src="styles/effects/effects.js"></script>
+        <script>createTop(2); lastNews(2); if (effects) { addSnow(100, document.getElementById("snow-wrapper")) };</script>
     </body>
 </html>

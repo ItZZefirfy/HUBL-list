@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Quicksand:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nova+Mono&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
 :root {
-    --font-family: "Quicksand", "Comfortaa", Calibri;
+    --font-family: "Quicksand", "Nunito", "Comfortaa", Calibri;
 
     --default-text-color: #fff;
     --secondary-text-color: #ccc;
@@ -18,4 +17,6 @@
     --border-radius2: 8px;
     --border-radius3: 12px;
     --border-radius4: 16px;
+
+    --player-level-progress: 90.5%;
 }

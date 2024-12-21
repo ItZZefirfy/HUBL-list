@@ -13,8 +13,9 @@
     background-color: var(--info-bg-color);
     backdrop-filter: blur(8px);
     color: var(--default-text-color);
+    box-sizing: border-box;
 
-    width: 75vw;
+    width: 85vw;
     max-width: 650px;
 
     display: flex;
@@ -30,26 +31,52 @@
         max-width: 550px;
     }
 
-    > h2 > span {
-        color: var(--third-text-color);
+    h2 {
+        margin: 10px 20px;
+
+        > span {
+            color: var(--third-text-color);
+        }
     }
+}
+
+#victors {
+    box-sizing: border-box;
+    width: 85vw;
+    max-width: 650px;
+
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .victor {
     background-color: var(--info-bg-color);
-    backdrop-filter: var(--info-bg-filter);
+    backdrop-filter: blur(8px);
     color: var(--default-text-color);
 
-    width: 75vw;
-    max-width: 650px;
     border-radius: var(--border-radius4);
 
-    padding: 10px;
-    padding-left: 20px;
+    padding: 10px 20px;
 
     text-decoration: underline;
 
     > span {
         color: var(--third-text-color);
     }
+}
+
+
+#info-back-button {
+    margin: 10px;
+    padding: 10px 30px;
+    font-size: 20px;
+
+    color: white;
+
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius3);
+
+    background-color: var(--info-bg-color);
+    backdrop-filter: blur(8px);
 }

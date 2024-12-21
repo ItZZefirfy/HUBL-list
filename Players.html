@@ -3,27 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Content-Security-Policy" content="default-src: *">
-        <title>Challenges</title>
-
+        <title>Top players</title>
+        
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/effects/snow.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="shortcut icon" href="images/icon.png">
     </head>
     <body>
         <div id="top"></div>
 
-        <div class="levels-wrapper" id="levels-wrapper"></div>
+        <div id="players-wrapper"></div>
         
-        <button onclick="topFunction()" class="scroll-btn" id="scroll-btn">
-            <i class='bx bx-up-arrow-alt'></i>
-        </button>
-            
+        <div id="snow-wrapper"></div>
+
         <script src="js/BD.js"></script>
-        <script src="js/addTop.js"></script>
-        <script src="js/pages/addLevels.js"></script>
+        <script src="js/settingsInit.js"></script>
         <script src="js/scroll.js"></script>
-        <script src="js/viewInfo.js"></script>
-        <script>createTop(1); addLevels("challengelist"); viewChallengeInfo("1064")</script>
+        <script src="js/addTop.js"></script>
+        <script src="js/pages/viewInfo.js"></script>
+        <script src="js/pages/addPlayers.js"></script>
+        <script src="styles/effects/effects.js"></script>
+        <script>createTop(3);  addPlayers(); if (effects) { addSnow(100, document.getElementById("snow-wrapper")) };</script>
     </body>
 </html>

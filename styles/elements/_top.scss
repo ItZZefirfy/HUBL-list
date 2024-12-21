@@ -8,20 +8,34 @@
     //background-color: #19192a;
     border-radius: 2vh;
 
-    font-size: clamp(10px, 1vw, 15px);
+    font-size: clamp(10px, 2vw, 15px);
 
     user-select: none;
 }
 
 .logo {
     margin: 2vh 2vw;
+    color: var(--default-text-color);
+    text-decoration: none;
+    transition: .3s ease-in-out;
+
+    @media (hover: hover) {
+        &:hover {
+            text-shadow: 0 0 5px var(--default-text-color);
+        }
+    }
+
+    @media (max-width: 500px) {
+        font-size: 60px;
+        display: none;
+    }
 }
 
 .page {
     padding: 2vh 2vw;
     margin: 0 0.5vw;
     border-radius: 1vh;
-    color: white;
+    color: var(--default-text-color);
     text-decoration: none;
 
     transition: .25s;
@@ -30,6 +44,7 @@
         &:hover {
             background-color: #fff1;
             backdrop-filter: blur(8px);
+            text-shadow: 0 0 2px var(--default-text-color);
         }
     }
 }
