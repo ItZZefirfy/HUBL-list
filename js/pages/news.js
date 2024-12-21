@@ -5,7 +5,6 @@ fetch(links["news"])
 
     //добавление новостей на страницу
     for (var i = 0; i < news.length; i++) {
-        console.log(news[i])
         news_wrapper.innerHTML = "<div class='news-post'>" + news[i] + "</div>" + news_wrapper.innerHTML
     }
 })

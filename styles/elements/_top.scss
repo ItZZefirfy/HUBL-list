@@ -8,7 +8,7 @@
     //background-color: #19192a;
     border-radius: 2vh;
 
-    font-size: clamp(10px, 1vw, 15px);
+    font-size: clamp(10px, 2vw, 15px);
 
     user-select: none;
 }
@@ -23,6 +23,11 @@
         &:hover {
             text-shadow: 0 0 5px var(--default-text-color);
         }
+    }
+
+    @media (max-width: 500px) {
+        font-size: 60px;
+        display: none;
     }
 }
 
