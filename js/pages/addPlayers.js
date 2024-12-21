@@ -3,16 +3,16 @@ function addPlayer_interface(name, points, position, icon) {
     var wrapper = document.getElementById("players-wrapper")
 
     if (icon == false) {
-        var result = `<div class="player">
-                    <img src="https://raw.githubusercontent.com/ItZZefirfy/HUBL-DataBase/refs/heads/players-system-test/icons/--default--.png" alt="">
+        var result = `<div class="player" onclick="viewPlayerInfo('${name}')">
+                    <img src="https://raw.githubusercontent.com/ItZZefirfy/HUBL-DataBase/refs/heads/main/icons/--default--.png" alt="">
                     <div class="player-text-wrapper">
                         <h1>#${position} - ${name}</h1>
                         <h3>${points} <span>points</span></h3>
                     </div>
                 </div>`
     } else {
-        var result = `<div class="player">
-                    <img src="https://raw.githubusercontent.com/ItZZefirfy/HUBL-DataBase/refs/heads/players-system-test/icons/${icon}" alt="">
+        var result = `<div class="player" onclick="viewPlayerInfo('${name}')">
+                    <img src="https://raw.githubusercontent.com/ItZZefirfy/HUBL-DataBase/refs/heads/main/icons/${icon}" alt="">
                     <div class="player-text-wrapper">
                         <h1>#${position} - ${name}</h1>
                         <h3>${points} <span>points</span></h3>
@@ -65,7 +65,6 @@ function addPlayers_Code(players, demons, challenges) {
           return 0;
     })
 
-    console.log(players)
 
     for (var i = 0; i < players.length; i++) {
         addPlayer_interface(players[i].name, players[i].points, i + 1, players[i].icon)

@@ -51,7 +51,7 @@
 
 .victor {
     background-color: var(--info-bg-color);
-    backdrop-filter: var(--info-bg-filter);
+    backdrop-filter: blur(8px);
     color: var(--default-text-color);
 
     border-radius: var(--border-radius4);
@@ -78,5 +78,5 @@
     border-radius: var(--border-radius3);
 
     background-color: var(--info-bg-color);
-    backdrop-filter: var(--info-bg-filter);
+    backdrop-filter: blur(8px);
 }
